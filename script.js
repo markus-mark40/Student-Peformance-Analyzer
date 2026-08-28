@@ -11,10 +11,24 @@ let lowestScore = 0;
 let averageScore = 0;
 let totalScore = 0;
 
+let category = "";
+
 studentNumbers = prompt("Total number of students?", "")
 
 
 while (currentStudentNumber < studentNumbers){
     currentStudentNumber += 1;
     studentScore = prompt("Student score?", "")
+    if (studentScore <= 100 && studentScore >= 90){
+        category = "Excellent";
+    } else if (studentScore <= 89 && studentScore >= 80) {
+        category = "Very Good";
+    } else if (studentScore <= 79 && studentScore >= 75){
+        category = "Good";
+    } else if (studentScore <= 74 && studentScore >= 60) {
+        category = "Needs Improvement";
+    } else if ( studentScore <= 59){
+        category = "Failing";
+    }
+    console.log (category);
 }
