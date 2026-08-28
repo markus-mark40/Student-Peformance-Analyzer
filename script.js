@@ -14,7 +14,10 @@ let totalScore = 0;
 let category = "";
 
 studentNumbers = prompt("Total number of students?", "")
+studentScore = prompt("Student score?", "")
 
+highestScore = studentScore;
+lowestScore = studentScore;
 
 while (currentStudentNumber < studentNumbers){
     currentStudentNumber += 1;
@@ -31,4 +34,5 @@ while (currentStudentNumber < studentNumbers){
         category = "Failing";
     }
     console.log (category);
+    if (studentScore)
 }
