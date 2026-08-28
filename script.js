@@ -10,3 +10,6 @@ let lowestScore = 0;
 
 let averageScore = 0;
 let totalScore = 0;
+
+studentNumbers = prompt("Total number of students?", "")
+studentScore = prompt("Student score?", "")
