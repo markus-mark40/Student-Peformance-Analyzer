@@ -34,5 +34,12 @@ while (currentStudentNumber < studentNumbers){
         category = "Failing";
     }
     console.log (category);
-    if (studentScore)
+    
+    if (studentScore > highestScore){
+        highestScore = studentScore;
+    } else if (studentScore < lowestScore){
+        lowestScore = studentScore;
+    }
+    console.log(`Highest score: ${highestScore}`);
+    console.log(`Lowest score: ${lowestScore}`);
 }
