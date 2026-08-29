@@ -13,8 +13,8 @@ let totalScore = 0;
 
 let category = "";
 
-studentNumbers = prompt("Total number of students?", "")
-studentScore = prompt("Student score?", "")
+studentNumbers = prompt("Total number of students?", "");
+studentScore = prompt("Student score?", "");
 
 highestScore = studentScore;
 lowestScore = studentScore;
@@ -35,6 +35,7 @@ while (currentStudentNumber < studentNumbers){
     } else if ( studentScore <= 59){
         category = "Failing";
     }
+    console.log("//////////");
     console.log (category);
     
 
@@ -45,7 +46,9 @@ while (currentStudentNumber < studentNumbers){
         lowestScore = studentScore;
     }
 
-
+    //Counts the total score by adding the student score at every repititon.
+    totalScore = totalScore + studentScore;
+    console.log(`Total Score: ${totalScore}`)
     console.log(`Highest score: ${highestScore}`);
     console.log(`Lowest score: ${lowestScore}`);
 }
