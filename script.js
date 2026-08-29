@@ -22,6 +22,8 @@ lowestScore = studentScore;
 while (currentStudentNumber < studentNumbers){
     currentStudentNumber += 1;
     studentScore = prompt("Student score?", "")
+
+    //Compares the score and asigns a category
     if (studentScore <= 100 && studentScore >= 90){
         category = "Excellent";
     } else if (studentScore <= 89 && studentScore >= 80) {
@@ -35,11 +37,15 @@ while (currentStudentNumber < studentNumbers){
     }
     console.log (category);
     
+
+    //Assigns the highest and lowest score
     if (studentScore > highestScore){
         highestScore = studentScore;
     } else if (studentScore < lowestScore){
         lowestScore = studentScore;
     }
+
+
     console.log(`Highest score: ${highestScore}`);
     console.log(`Lowest score: ${lowestScore}`);
 }
