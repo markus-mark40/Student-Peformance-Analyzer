@@ -1,3 +1,4 @@
+// Initialize START
 SET studentNumbers to 0
 SET currentStudentNumber to 1
 SET studentScore to -1
@@ -12,8 +13,9 @@ SET passingCount to 0
 SET failingCount to 0
 
 SET scoreCategory to none
+// Initialize END
 
-
+// Ask for studentNumbers
 WHILE studentNumbers is not greater than 0 THEN
     ask for studentNumbers
 
@@ -26,6 +28,7 @@ WHILE studentNumbers is not greater than 0 THEN
 WHILE currentStudentNumber is less than or equal to studentNumbers THEN
     ask for studentScore
 
+    // Repeats on asking for a valid studentScore
     while studentScore is less than 0 OR studentScore is greater than 100 THEN
         ask for studentScore
 
@@ -44,22 +47,26 @@ WHILE currentStudentNumber is less than or equal to studentNumbers THEN
     ELSE IF studentScore is 59 below THEN
         SET scoreCategory as "Failing"
 
+    // Initialize currentStudentNumber to thefirst studentScore
     IF currentStudentNumber is equal to 1 THEN
         SET highestScore to studentScore
         SET lowestScore to studentScore
-    ELSE
+    ELSE // Sets the highestScore and lowestScore
         IF studentScore is greater than highestScore THEN
             SET highestScore to studentScore
         IF studentScore is less than lowestScore THEN
             SET lowestScore to studentScore
 
+    // Calculates and sets the totalScore
     SET totalScore to totalScore + studentScore
     
+    // Counts the passingCount and failignCount
     IF studentScore is greater than or equal to 60 THEN
         Add 1 to passingCount
     ELSE
         Add 1 to failingCount
 
+    // Displays the iteration's results
     DISPLAY currentStudentNumber
     DISPLAY studentScore
     DISPLAY "Valid"
