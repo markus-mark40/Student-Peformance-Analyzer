@@ -16,13 +16,19 @@ let category = "";
 studentNumbers = prompt("Total number of students?", "");
 studentScore = prompt("Student score?", "");
 
+
+Number(studentNumbers);
+
+
 highestScore = studentScore;
 lowestScore = studentScore;
 
 while (currentStudentNumber < studentNumbers){
     currentStudentNumber += 1;
     studentScore = prompt("Student score?", "")
-
+    
+    Number(studentScore);
+    console.log(typeof(studentScore));
     //Compares the score and asigns a category
     if (studentScore <= 100 && studentScore >= 90){
         category = "Excellent";
