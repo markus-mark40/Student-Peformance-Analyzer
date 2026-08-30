@@ -45,7 +45,7 @@ WHILE currentStudentNumber is less than or equal to studentNumbers THEN
     ELSE IF studentScore is 59 below THEN
         SET scoreCategory as "Failing"
 
-    // Initialize currentStudentNumber to the first studentScore
+    // Initialize highestScore and lowestScore to the first studentScore
     IF currentStudentNumber is equal to 1 THEN
         SET highestScore to studentScore
         SET lowestScore to studentScore
