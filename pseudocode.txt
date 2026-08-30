@@ -15,12 +15,8 @@ failingCount = 0
 // Ask for studentNumbers and repeats asking until a valid number is given.
 while (studentNumbers <= 0)
 {
+    print "Number is invalid. Number must be greater than 0"
     input studentNumbers
-
-    if (studentNumbers <= 0)
-    then {
-        print "Number is invalid. Number must be greater than 0"
-    }
 }
 
 // Main comparison block START
