@@ -1,0 +1,52 @@
+// Ask for studentNumbers
+while (studentNumbers <= 0)
+{
+    input studentNumbers
+
+    if (studentNumbers <= 0)
+    then {
+        print "Number is invalid. Number must be greater than 0"
+    }
+}
+
+// Main comparison block START
+while (currentStudentNumber <= studentNumbers)
+{
+    input studentScore
+
+    while (studentScore < 0 or studentScore > 100)
+    {
+        input studentScore
+        
+        if (studentScore < 0 or studentScore > 100)
+        then {
+            print "Number is invalid. Number must be greater than or equal to 0 and less than or equal to 100"
+        }
+    }
+
+    if (studentScore >= 90)
+    then {
+        scoreCategory = "Excellent"
+    } else {
+        if (studentScore >= 80 and studentScore <= 89)
+        then {
+            scoreCategory = "Very Good"
+        } else {
+            if (studentScore >= 75 and studentScore <= 79)
+            then {
+                scoreCategory = "Good"
+            } else {
+                if (studentScore >= 60 and studentScore <= 74)
+                then {
+                    scoreCategory = "Needs Improvement"
+                } else {
+                    scoreCategory = "Failing"
+                }
+            }
+        }
+    }
+
+    ---
+
+    currentStudentNumber = currentStudentNumber + 1
+}
