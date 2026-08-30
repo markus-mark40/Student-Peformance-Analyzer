@@ -1,3 +1,16 @@
+studentNumbers = 0
+currentStudentNumber = 1
+studentScore = -1
+
+totalScore = 0
+averageScore = 0
+
+highestScore = 0
+lowestScore = 0
+
+passingCount = 0
+failingCount = 0
+
 // Ask for studentNumbers
 while (studentNumbers <= 0)
 {
