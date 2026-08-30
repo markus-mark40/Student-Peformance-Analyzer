@@ -55,9 +55,10 @@ while (currentStudentNumber <= studentNumbers)
         then {
             highestScore = studentScore
         }
-        if (studentScore < lowestScore)
+        if (studentScore < lowestScore){
         lowestScore = studentScore
         }
+    }
 
     totalScore = totalScore + studentScore
 
@@ -69,4 +70,12 @@ while (currentStudentNumber <= studentNumbers)
     }
 
     currentStudentNumber = currentStudentNumber + 1
+
+    Output currentStudentNumber
+    Output studentScore
+    Output "Valid"
+    Output scoreCategory
+    Output passingCount
+    Output failignCount
+    Output totalScore
 }
