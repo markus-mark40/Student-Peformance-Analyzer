@@ -46,7 +46,27 @@ while (currentStudentNumber <= studentNumbers)
         }
     }
 
-    ---
+    if (currentStudentNumber = 1)
+    then{
+        highestScore = studentScore
+        lowestScore = studentScore
+    } else {
+        if (studentScore > highestScore)
+        then {
+            highestScore = studentScore
+        }
+        if (studentScore < lowestScore)
+        lowestScore = studentScore
+        }
+
+    totalScore = totalScore + studentScore
+
+    if (studentScore >= 60)
+    then {
+        passingCount = passingCount + 1
+    } else {
+        failingCount = failignCount + 1
+    }
 
     currentStudentNumber = currentStudentNumber + 1
 }
