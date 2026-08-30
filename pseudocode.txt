@@ -1,3 +1,4 @@
+// Initialize variables
 studentNumbers = 0
 currentStudentNumber = 1
 studentScore = -1
@@ -11,7 +12,7 @@ lowestScore = 0
 passingCount = 0
 failingCount = 0
 
-// Ask for studentNumbers
+// Ask for studentNumbers and repeats asking until a valid number is given.
 while (studentNumbers <= 0)
 {
     input studentNumbers
@@ -27,6 +28,7 @@ while (currentStudentNumber <= studentNumbers)
 {
     input studentScore
 
+    // Repeats on asking for a valid studentScore
     while (studentScore < 0 or studentScore > 100)
     {
         input studentScore
@@ -37,6 +39,7 @@ while (currentStudentNumber <= studentNumbers)
         }
     }
 
+    // Categorize studentScores
     if (studentScore >= 90)
     then {
         scoreCategory = "Excellent"
@@ -59,6 +62,8 @@ while (currentStudentNumber <= studentNumbers)
         }
     }
 
+    // Initialize highestScore and lowestScore to the first studentScore
+    // Compares and sets the highestScore and lowestScore
     if (currentStudentNumber = 1)
     then{
         highestScore = studentScore
@@ -73,8 +78,10 @@ while (currentStudentNumber <= studentNumbers)
         }
     }
 
+    // Calculates and sets the totalScore
     totalScore = totalScore + studentScore
 
+    // Compares and counts the passingCount and failingCount
     if (studentScore >= 60)
     then {
         passingCount = passingCount + 1
@@ -82,8 +89,7 @@ while (currentStudentNumber <= studentNumbers)
         failingCount = failingCount + 1
     }
 
-
-
+    // Displays the current iteration's results
     Output currentStudentNumber
     Output studentScore
     Output "Valid"
@@ -92,11 +98,14 @@ while (currentStudentNumber <= studentNumbers)
     Output failingCount
     Output totalScore
 
+    // Adds 1 to the currentStudentNumber
     currentStudentNumber = currentStudentNumber + 1
 }
 
+// Calculates and sets averageScore
 averageScore = totalScore / studentNumbers
 
+// Outputs the analysis summary
 Output averageScore
 Output passingCount
 Output failingCount
