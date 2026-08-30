@@ -81,3 +81,12 @@ while (currentStudentNumber <= studentNumbers)
 
     currentStudentNumber = currentStudentNumber + 1
 }
+
+averageScore = totalScore / studentNumbers
+
+Output averageScore
+Output passingCount
+Output failingCount
+Output highestScore
+Output lowestScore
+Output totalScore
