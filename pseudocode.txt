@@ -69,7 +69,7 @@ while (currentStudentNumber <= studentNumbers)
         failingCount = failingCount + 1
     }
 
-    currentStudentNumber = currentStudentNumber + 1
+
 
     Output currentStudentNumber
     Output studentScore
@@ -78,4 +78,6 @@ while (currentStudentNumber <= studentNumbers)
     Output passingCount
     Output failingCount
     Output totalScore
+
+    currentStudentNumber = currentStudentNumber + 1
 }
