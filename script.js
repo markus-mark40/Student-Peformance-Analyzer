@@ -1,3 +1,4 @@
+// initialize START
 let studentNumbers = 0;
 let currentStudentNumber = 1;
 let studentScore = -1;
@@ -12,3 +13,4 @@ let passingCount = 0;
 let failingCount = 0;
 
 let setCategory = "";
+// Intialize END
