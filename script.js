@@ -63,5 +63,12 @@ while (currentStudentNumber <= studentNumbers){
     // Calculates and sets the totalScore
     totalScore = totalSCore + studentScore;
 
+    // Compares and counts the passingCount and failingCount
+    if (studentScore >= 60){
+        passingCount = passingCount + 1;
+    } else {
+        failingCount = failingCount + 1;
+    }
+
     currentStudentNumber = currentStudentNumber + 1;
 }
