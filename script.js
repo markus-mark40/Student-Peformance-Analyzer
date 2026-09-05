@@ -43,7 +43,7 @@ while (currentStudentNumber <= studentNumbers){
     } else if (studentScore >= 60 && studentScore <= 74){
         scoreCategory = "Needs Improvement";
     } else {
-        scoreCategory = "Failing"
+        scoreCategory = "Failing";
     }
 
     // Initialize highestScore and lowestScore to the first studentScore
