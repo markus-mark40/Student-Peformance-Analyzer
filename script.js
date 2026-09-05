@@ -33,6 +33,14 @@ while (currentStudentNumber <= studentNumbers){
 
     if (studentScore >= 90){
         scoreCategory = "Excellent";
+    } else if ( studentScore >= 80 && studentScore <= 89){
+        scoreCategory = "Very Good";
+    } else if (studentScore >= 75 && studentScore <= 79) {
+        scoreCategory = "Good"; 
+    } else if (studentScore >= 60 && studentScore <= 74){
+        scoreCategory = "Needs Improvement";
+    } else {
+        scoreCategory = "Failing"
     }
 
     currentStudentNumber = currentStudentNumber + 1;
