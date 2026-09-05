@@ -33,6 +33,7 @@ while (currentStudentNumber <= studentNumbers){
         studentScore = prompt("Input score of student", "");
     }
 
+    // Categorizes studentScore and assigns remarks
     if (studentScore >= 90){
         scoreCategory = "Excellent";
     } else if ( studentScore >= 80 && studentScore <= 89){
