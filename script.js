@@ -70,5 +70,14 @@ while (currentStudentNumber <= studentNumbers){
         failingCount = failingCount + 1;
     }
 
+    // Displays the current iteration's results
+    console.log(`currentStudentNumber: ${currentStudentNumber}`);
+    console.log(`studentScore: ${studentScore}`);
+    console.log("Valid");
+    console.log(`scoreCategory: ${scoreCategory}`);
+    console.log(`passingCount: ${scoreCategory}`);
+    console.log(`failingCount: ${scoreCategory}`);
+    console.log(`totalScore: ${scoreCategory}`)
+
     currentStudentNumber = currentStudentNumber + 1;
 }
