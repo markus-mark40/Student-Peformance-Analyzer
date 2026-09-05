@@ -17,7 +17,7 @@ let scoreCategory = "";
 
 // Asks for studentNumbers until a valid number is given.
 while (studentNumbers <= 0){
-    studentNumbers = prompt("Input number of students", "");
+    studentNumbers = +prompt("Input number of students", "");
 
     if (studentNumbers <= 0){
         alert("Number is invalid. Number must be greater than 0");
@@ -25,12 +25,12 @@ while (studentNumbers <= 0){
 }
 
 while (currentStudentNumber <= studentNumbers){
-    studentScore = prompt("Input score of student", "");
+    studentScore = +prompt("Input score of student", "");
 
     // Asks for studentScore until a valid number is given.
     while (studentScore < 0 || studentScore > 100){
         alert("Number is invalid. Number must be greater than or equal to 0 and less than or equal to 100");
-        studentScore = prompt("Input score of student", "");
+        studentScore = +prompt("Input score of student", "");
     }
 
     // Categorizes studentScore and assigns remarks
