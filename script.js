@@ -77,10 +77,18 @@ while (currentStudentNumber <= studentNumbers){
     console.log(`scoreCategory: ${scoreCategory}`);
     console.log(`passingCount: ${scoreCategory}`);
     console.log(`failingCount: ${scoreCategory}`);
-    console.log(`totalScore: ${scoreCategory}`)
+    console.log(`totalScore: ${scoreCategory}`);
 
     currentStudentNumber = currentStudentNumber + 1;
 }
 
 // Calculates and sets averageScore
 averageScore = totalScore / studentNumbers;
+
+// Outputs the analysis summary
+console.log(`averageScore: ${averageScore}`);
+console.log(`passingCount: ${passingCount}`);
+console.log(`failingCount: ${failingCount}`);
+console.log(`highestScore: ${highestScore}`);
+console.log(`lowestScore: ${lowestScore}`);
+console.log(`totalScore: ${totalScore}`);
