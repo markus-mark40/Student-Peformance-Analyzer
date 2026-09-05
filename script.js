@@ -46,5 +46,17 @@ while (currentStudentNumber <= studentNumbers){
         scoreCategory = "Failing"
     }
 
+    if (currentStudentNumber = 1){
+        highestScore = studentScore;
+        lowestScore = studentScore;
+    } else {
+        if (studentScore > highestScore){
+            highestScore = studentScore;
+        }
+        if (studentScore < lowestScore){
+            lowestScore = studentScore;
+        }
+    }
+
     currentStudentNumber = currentStudentNumber + 1;
 }
