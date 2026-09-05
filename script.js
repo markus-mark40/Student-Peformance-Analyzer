@@ -14,3 +14,12 @@ let failingCount = 0;
 
 let setCategory = "";
 // Intialize END
+
+
+while (studentNumbers <= 0){
+    prompt("Input number of students", "");
+
+    if (studentNumbers <= 0){
+        alert("Number is invalid. Number must be greater than 0");
+    }
+}
