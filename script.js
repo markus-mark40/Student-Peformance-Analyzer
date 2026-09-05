@@ -12,7 +12,7 @@ let lowestScore = 0;
 let passingCount = 0;
 let failingCount = 0;
 
-let setCategory = "";
+let scoreCategory = "";
 // Intialize END
 
 // Asks for studentNumbers until a valid number is given.
