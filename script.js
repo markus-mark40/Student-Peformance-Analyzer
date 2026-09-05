@@ -30,4 +30,6 @@ while (currentStudentNumber <= studentNumbers){
     if (studentScore < 0 || studentScore > 100){
         alert("Number is invalid. Number must be greater than or equal to 0 and less than or equal to 100");
     }
+
+    currentStudentNumber = currentStudentNumber + 1;
 }
