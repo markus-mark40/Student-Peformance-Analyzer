@@ -71,6 +71,8 @@ while (currentStudentNumber <= studentNumbers){
     }
 
     // Displays the current iteration's results
+    console.log("/////////////////")
+    console.log("Current iteration's results:")
     console.log(`currentStudentNumber: ${currentStudentNumber}`);
     console.log(`studentScore: ${studentScore}`);
     console.log("Valid");
@@ -86,6 +88,7 @@ while (currentStudentNumber <= studentNumbers){
 averageScore = totalScore / studentNumbers;
 
 // Outputs the analysis summary
+console.log("////////////")
 console.log(`averageScore: ${averageScore}`);
 console.log(`passingCount: ${passingCount}`);
 console.log(`failingCount: ${failingCount}`);
