@@ -17,7 +17,7 @@ let setCategory = "";
 
 // Asks for studentNumbers until a valid number is given.
 while (studentNumbers <= 0){
-    prompt("Input number of students", "");
+    studentNumbers = prompt("Input number of students", "");
 
     if (studentNumbers <= 0){
         alert("Number is invalid. Number must be greater than 0");
