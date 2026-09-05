@@ -1,60 +1,94 @@
+// initialize START
 let studentNumbers = 0;
-let currentStudentNumber = 0;
-let studentScore = 0;
+let currentStudentNumber = 1;
+let studentScore = -1;
 
-let passingCount = 0;
-let failingCount = 0;
+let totalScore = 0;
+let averageScore = 0;
 
 let highestScore = 0;
 let lowestScore = 0;
 
-let averageScore = 0;
-let totalScore = 0;
+let passingCount = 0;
+let failingCount = 0;
 
-let category = "";
+let scoreCategory = "";
+// Intialize END
 
-studentNumbers = prompt("Total number of students?", "");
-studentScore = prompt("Student score?", "");
+// Asks for studentNumbers until a valid number is given.
+while (studentNumbers <= 0){
+    studentNumbers = +prompt("Input number of students", "");
 
-
-Number(studentNumbers);
-
-
-highestScore = studentScore;
-lowestScore = studentScore;
-
-while (currentStudentNumber < studentNumbers){
-    currentStudentNumber += 1;
-    studentScore = prompt("Student score?", "")
-    
-    Number(studentScore);
-    console.log(typeof(studentScore));
-    //Compares the score and asigns a category
-    if (studentScore <= 100 && studentScore >= 90){
-        category = "Excellent";
-    } else if (studentScore <= 89 && studentScore >= 80) {
-        category = "Very Good";
-    } else if (studentScore <= 79 && studentScore >= 75){
-        category = "Good";
-    } else if (studentScore <= 74 && studentScore >= 60) {
-        category = "Needs Improvement";
-    } else if ( studentScore <= 59){
-        category = "Failing";
+    if (studentNumbers <= 0){
+        alert("Number is invalid. Number must be greater than 0");
     }
-    console.log("//////////");
-    console.log (category);
-    
-
-    //Assigns the highest and lowest score
-    if (studentScore > highestScore){
-        highestScore = studentScore;
-    } else if (studentScore < lowestScore){
-        lowestScore = studentScore;
-    }
-
-    //Counts the total score by adding the student score at every repititon.
-    totalScore = totalScore + studentScore;
-    console.log(`Total Score: ${totalScore}`)
-    console.log(`Highest score: ${highestScore}`);
-    console.log(`Lowest score: ${lowestScore}`);
 }
+
+while (currentStudentNumber <= studentNumbers){
+    studentScore = +prompt("Input score of student", "");
+
+    // Asks for studentScore until a valid number is given.
+    while (studentScore < 0 || studentScore > 100){
+        alert("Number is invalid. Number must be greater than or equal to 0 and less than or equal to 100");
+        studentScore = +prompt("Input score of student", "");
+    }
+
+    // Categorizes studentScore and assigns remarks
+    if (studentScore >= 90){
+        scoreCategory = "Excellent";
+    } else if ( studentScore >= 80 && studentScore <= 89){
+        scoreCategory = "Very Good";
+    } else if (studentScore >= 75 && studentScore <= 79) {
+        scoreCategory = "Good"; 
+    } else if (studentScore >= 60 && studentScore <= 74){
+        scoreCategory = "Needs Improvement";
+    } else {
+        scoreCategory = "Failing";
+    }
+
+    // Initialize highestScore and lowestScore to the first studentScore
+    // Compares and sets the highestScore and lowestScore
+    if (currentStudentNumber == 1){
+        highestScore = studentScore;
+        lowestScore = studentScore;
+    } else {
+        if (studentScore > highestScore){
+            highestScore = studentScore;
+        }
+        if (studentScore < lowestScore){
+            lowestScore = studentScore;
+        }
+    }
+
+    // Calculates and sets the totalScore
+    totalScore = totalScore + studentScore;
+
+    // Compares and counts the passingCount and failingCount
+    if (studentScore >= 60){
+        passingCount = passingCount + 1;
+    } else {
+        failingCount = failingCount + 1;
+    }
+
+    // Displays the current iteration's results
+    console.log(`currentStudentNumber: ${currentStudentNumber}`);
+    console.log(`studentScore: ${studentScore}`);
+    console.log("Valid");
+    console.log(`scoreCategory: ${scoreCategory}`);
+    console.log(`passingCount: ${passingCount}`);
+    console.log(`failingCount: ${failingCount}`);
+    console.log(`totalScore: ${totalScore}`);
+
+    currentStudentNumber = currentStudentNumber + 1;
+}
+
+// Calculates and sets averageScore
+averageScore = totalScore / studentNumbers;
+
+// Outputs the analysis summary
+console.log(`averageScore: ${averageScore}`);
+console.log(`passingCount: ${passingCount}`);
+console.log(`failingCount: ${failingCount}`);
+console.log(`highestScore: ${highestScore}`);
+console.log(`lowestScore: ${lowestScore}`);
+console.log(`totalScore: ${totalScore}`);
