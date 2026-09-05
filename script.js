@@ -81,3 +81,6 @@ while (currentStudentNumber <= studentNumbers){
 
     currentStudentNumber = currentStudentNumber + 1;
 }
+
+// Calculates and sets averageScore
+averageScore = totalScore / studentNumbers;
