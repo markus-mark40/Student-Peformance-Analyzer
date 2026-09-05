@@ -22,7 +22,6 @@ WHILE studentNumbers is not greater than 0 THEN
     IF studentNumbers is not greater than 0 THEN
         say "Number is invalid. Number must be greater than 0"
 
-// After the studentNumber is now greater than 0
 
 // Main comparison block START
 WHILE currentStudentNumber is less than or equal to studentNumbers THEN
