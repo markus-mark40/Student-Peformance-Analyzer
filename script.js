@@ -31,5 +31,9 @@ while (currentStudentNumber <= studentNumbers){
         alert("Number is invalid. Number must be greater than or equal to 0 and less than or equal to 100");
     }
 
+    if (studentScore >= 90){
+        scoreCategory = "Excellent";
+    }
+
     currentStudentNumber = currentStudentNumber + 1;
 }
