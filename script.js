@@ -60,5 +60,8 @@ while (currentStudentNumber <= studentNumbers){
         }
     }
 
+    // Calculates and sets the totalScore
+    totalScore = totalSCore + studentScore;
+
     currentStudentNumber = currentStudentNumber + 1;
 }
