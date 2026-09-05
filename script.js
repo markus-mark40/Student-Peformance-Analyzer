@@ -15,7 +15,7 @@ let failingCount = 0;
 let setCategory = "";
 // Intialize END
 
-
+// Asks for studentNumbers until a valid number is given.
 while (studentNumbers <= 0){
     prompt("Input number of students", "");
 
