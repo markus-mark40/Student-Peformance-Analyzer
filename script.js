@@ -48,7 +48,7 @@ while (currentStudentNumber <= studentNumbers){
 
     // Initialize highestScore and lowestScore to the first studentScore
     // Compares and sets the highestScore and lowestScore
-    if (currentStudentNumber = 1){
+    if (currentStudentNumber == 1){
         highestScore = studentScore;
         lowestScore = studentScore;
     } else {
