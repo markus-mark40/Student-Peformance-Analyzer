@@ -5,5 +5,5 @@
 ### How to use
 
 - Make sure you are on desktop
-- Turn on the console "Ctrl + Shift + C" to see results
+- Turn on the console "Ctrl + Shift + J" to see results
 - Input data
