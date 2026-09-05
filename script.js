@@ -23,3 +23,11 @@ while (studentNumbers <= 0){
         alert("Number is invalid. Number must be greater than 0");
     }
 }
+
+while (currentStudentNumber <= studentNumbers){
+    studentScore = prompt("Input score of student", "");
+
+    if (studentScore < 0 || studentScore > 100){
+        alert("Number is invalid. Number must be greater than or equal to 0 and less than or equal to 100");
+    }
+}
